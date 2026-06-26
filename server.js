@@ -361,7 +361,7 @@ io.on('connection', (socket) => {
 
 // ─── Static Files ─────────────────────────────────────────────────────────────
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), { extensions: ['html'] }));
 
 // ─── Start Server ─────────────────────────────────────────────────────────────
 
